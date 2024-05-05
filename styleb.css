@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('6039257.jpg');
+}
+
+.input {
+    position: absolute;
+    top: 50%;
+    left: 600px;
+    transform: translate(-30%, -50%);
+    background: rgba(252, 251, 249, 0.9);
+    padding: 50px;
+    width: 320px;
+    border-radius: 15px;
+}
+
+.input h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-top: 0;
+    margin-top: -20px;
+}
+
+.box-input {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 8px 0;
+}
+
+.box-input i {
+    font-size: 23px;
+    color: black;
+    padding: 5px 0;
+}
+
+.box-input input {
+    width: 92.5%;
+    padding: 5px 0;
+    background: #dddcdc;
+    border: #dddcdc;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 18px;
+}
+
+.pass-icon{
+    position: absolute;
+    top: 325px;
+    right: 85px;
+    width: 24px;
+}
+
+.box-input input::placeholder {
+    color: rgb(184, 184, 184);
+}
+
+.btn-input .box-input input:hover {
+    background: rgba(10, 10, 10, s 0.5);
+}
+
+.btn-input {
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-bottom: 1px;
+    background: lightseagreen;
+    border: 1px solid lightseagreen;
+    width: 89%;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+.btn-input:hover {
+    background: rgb(18, 163, 156);
+}
+
+.bottom {
+    margin-left: 18px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+
+.bottom p {
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom a {
+    color: lightseagreen;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}

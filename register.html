@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleb.css" media="screen" title="no title">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <div class="input">
+        <h1>REGISTER</h1>
+        <form action="register.php" method="POST">
+            <div class="box-input">
+                <input type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="box-input">
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="box-input">
+                <input type="text" name="institution" placeholder="Institution">
+            </div>
+            <div class="box-input">
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="box-input">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <img src="eye-close.png" id="eyeicon" class="pass-icon">
+            </div>
+            <a href="index.html">
+                <button type="submit" name="register" class="btn-input">Register</button>
+            </a>
+            <div class="bottom">
+                <p>Sudah punya akun?
+                    <a href="index.html">Login disini</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeicon.src = "eye-open.png";
+            } else {
+                password.type = "password";
+                eyeicon.src = "eye-close.png";
+            }
+        };
+    });
+</script>
+
+</html>
